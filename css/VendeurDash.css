@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    position: fixed;
+    display: inline-block;
+    height: 100%;
+    width: 250px;
+    background-color: #08959A;
+    padding: 15px;
+    z-index: 99; 
+}
+.sidebar .action  {
+    margin-top: 50px;
+}
+.sidebar .action ul {
+    list-style: none;
+}
+
+.sidebar .action ul li a{
+    text-decoration: none;
+    color: #fffffe;
+    font-size: 25px;
+}
+
+.sidebar .action ul li a:hover{
+    background-color: #fffffe;
+    color: #08959A;
+    border-radius: 10px;
+
+}
+.sidebar hr{
+    color: #fff;
+    height: 1px;
+    opacity: 1;
+}
+
+.sidebar .action ul li {
+    margin-top: 20px;
+}
+.sidebar .action ul li i{
+    
+    margin-right: 15px;
+}
+
+.sidebar .logo h1{
+    padding-top: 10px;
+    color: #fffffe;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.section-content{
+    position: relative;
+    left: 240px;
+    display: block;
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: #D4F4FE;
+}
+.top-menu{
+    display: flex;
+    position: fixed;
+    width: calc(100% - 250px);
+   justify-content: space-between;
+    background-color: #F0feff;
+    padding-top: 40px;
+}
+.top-menu .burger{
+    display: none;
+}
+.top-menu .ferme{
+   display: none;
+    font-size: 50px;
+    position: relative;
+    left: 160px;
+    top: -35px;
+}
+.box-input input{
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 20px;
+    border: 1px solid #08959A;
+}
+.box-input i{
+    position: relative;
+    left: -30px;
+    color: #08959A;
+}
+.avatar-vendeur .image{
+    width: 50px;
+    height: 50px;
+    
+}
+.avatar-vendeur .image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.avatar-vendeur {
+    display: flex;
+    padding-right: 5px;
+   /* position: absolute;
+    left: 700px;*/
+    
+}
+.avatar-vendeur p{
+    padding-top: 10px;
+}
+
+.main .sous-div{
+    
+    height: 150px;
+    width: calc(100% / 4 - 15px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.575);
+    background-color: #FDFEFE;
+
+    
+}
+.main .sous-main{
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+.liste-produit{
+   
+    height: 100%;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block;
+    border-radius: 10px;
+    background-color: #FDFEFE;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.575);
+}
+.liste-produit .titre{
+    display: flex;
+    justify-content: space-between;
+}
+.liste-produit .titre button{
+    height: 30px;
+    background-color: #08959A;
+    columns: #fffffe;
+    border-radius: 8px;
+    margin: 10px;
+}
+.liste-produit .titre h1{
+   margin-left: 10px;
+}
+.main .sous-main1{
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.main .sous-main1 .plus-vendu{
+    display: block;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: calc(100% - 700px); 
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.575);
+}
+.main .sous-main1 .plus-vendu h3{
+    margin-left: 10px;
+}
+.sous-main .sous-div{
+    display: flex;
+    justify-content: space-around;
+}
+.sous-main .sous-div .mini{
+    margin-top: 20px;
+   display: block;
+}
+.sous-main .sous-div .mini .p1{
+   font-size: 40px;
+   font-weight: bolder;
+}
+.sous-main .sous-div .mini .p2{
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 5px;
+    
+ }
+ .sous-main .sous-div i{
+    font-size: 70px;
+    margin-top: 20px;
+    color: rgba(255, 255, 0, 0.747);
+}
+
+@media screen and (max-width:1200px) {
+    .liste-produit{
+        width:600px;
+        
+    }
+    .main .sous-main1 .plus-vendu{
+        width: calc(100% - 600px) ; 
+       
+    }
+    .sous-main .sous-div .mini .p1{
+        font-size: 30px;
+       
+     }
+     .sous-main .sous-div .mini .p2{
+         font-size: 15px;
+         
+         
+      }
+      .sous-main .sous-div i{
+         font-size: 50px;
+         margin-top: 30px;
+         
+     }
+     
+}
+
+@media screen and (max-width:1100px) {
+    .sous-main .sous-div{
+        width: calc(100% / 2 - 15px);
+        margin-top: 10px;
+    }
+    .sidebar{
+       
+        width: 250px;
+       
+        z-index: 99; 
+    }
+  
+  /*  .main .sous-main1{
+        display: block;
+        padding-right: 25px;
+        
+    
+       
+    }*/
+
+}
+@media screen and (max-width:1050px) {
+    .liste-produit{
+        width:500px;
+        
+    }
+    .main .sous-main1 .plus-vendu{
+        width: calc(100% - 500px) ; 
+       
+    }
+}
+@media screen and (max-width:940px) {
+    .liste-produit{
+        width:100%;
+        
+    }
+    .main .sous-main1 .plus-vendu{
+        width: 100% ; 
+       
+    }
+    .main .sous-main1{
+        display: block;
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width:700px) {
+    .sidebar{
+        width: 200px;
+        
+    }
+    .sidebar .logo h1{
+        font-size: 25px;
+        
+    }
+    .section-content{
+        width: calc(100% - 200px);
+        left: 190px;
+    }
+    .top-menu{
+       
+        width: calc(100% - 200px);
+       
+    }
+    .sidebar .action ul li a{
+        font-size: 18px;
+        
+    }
+    .liste-produit{
+        width:100%;
+        overflow-x: hidden;
+        
+    }
+    
+}
+@media screen and (max-width:620px) {
+    .sidebar{
+        margin-left: -200px;
+        transition: 0.5s ease-out;
+        
+    }
+    .section-content{
+        width: 100%;
+        left: 0;
+    }
+    .top-menu{
+       
+        width: 100%;
+       
+    }
+    .top-menu .burger{
+        display: flex;
+        position: relative;
+        left: 10px;
+        top: -23px;
+        font-size: 30px;
+     }
+     .top-menu p{
+        display: none;
+     }
+     .top-menu .box-input{
+        margin-top: -20px;
+     }
+     .top-menu .avatar-vendeur .image{
+        margin-top: -28px;
+     }
+     .main .sous-main{
+        padding-top: -40px;
+        margin-left: 2px;
+    }
+    .main .sous-main1 .liste-produit{
+        margin-left: 12px;
+    }
+    .main .sous-main1 .plus-vendu{
+        margin-left: 12px;
+    }
+    
+}
+@media screen and (max-width:470px) {
+
+    .top-menu .box-input input{
+       width: 200px;
+     }
+     .sous-main .sous-div i{
+        font-size: 40px;
+       
+        
+    }
+}
+
